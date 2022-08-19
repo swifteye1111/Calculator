@@ -1,0 +1,39 @@
+.main-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: darkslategray;
+    margin-bottom: auto;
+}
+
+.middle {
+    background-color: lightgrey;
+    display: flex;
+    min-height: 80vh;
+    border-top: 15px grey solid;
+    border-bottom: 15px grey solid;
+}
+
+.calc {
+    background-color: lightslategrey;
+    color: white;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: darkslategray;
+    margin-top: auto;
+    padding: 10px;
+}
