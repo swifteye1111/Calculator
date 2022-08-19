@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "skinny";
+    src: url("fonts/Mathlete-Skinny.otf");
+}
+
+@font-face {
+    font-family: "bulky";
+    src: url("fonts/Mathlete-Bulky.otf");
+}
+
 .main-item {
     width: 100%;
     display: flex;
@@ -9,17 +19,20 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 600px;
+    margin: auto;
 }
 
 .header {
     background-color: darkslategray;
     margin-bottom: auto;
+    font-family: "bulky";
 }
 
 .middle {
     background-color: lightgrey;
     display: flex;
-    min-height: 80vh;
+    min-height: 85vh;
     border-top: 15px grey solid;
     border-bottom: 15px grey solid;
 }
@@ -27,13 +40,56 @@ body {
 .calc {
     background-color: lightslategrey;
     color: white;
-    width: 500px;
+    width: 350px;
+    height: 450px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .footer {
     background-color: darkslategray;
     margin-top: auto;
     padding: 10px;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #BCD;
+    color: #123;
+    height: 50px;
+    border-radius: 5px;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 50px;
+    font-family: "skinny";
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.nums {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.num {
+    width: 80px;
+    height: 80px;
+}
+
+.ops {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;;
+}
+
+.op {
+    width: 80px;
 }
