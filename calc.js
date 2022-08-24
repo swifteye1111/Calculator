@@ -69,6 +69,9 @@ function runOperate(nums, ops) {
         if (ops[j]) {
             a = operate(ops[i],nums[i],nums[j]);
             nums[j] = a;
-        }   else return operate(ops[i],nums[i],nums[j]);
-    }
+        }   else {
+                // return answer rounded to the 4th decimal place
+                return Math.round((operate(ops[i],nums[i],nums[j])) * 10000 ) / 10000;
+            }   
+            }
 }
