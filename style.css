@@ -8,6 +8,7 @@
     src: url("fonts/Mathlete-Bulky.otf");
 }
 
+/* Header, middle section, footer */
 .main-item {
     width: 100%;
     display: flex;
@@ -79,7 +80,7 @@ body {
     flex-wrap: wrap;
 }
 
-.num {
+.num, .button.ac, .button.dec {
     width: 80px;
     height: 80px;
 }
